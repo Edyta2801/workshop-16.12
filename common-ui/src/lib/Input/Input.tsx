@@ -1,5 +1,6 @@
 import { nanoid } from 'nanoid';
 import { ComponentProps } from 'react';
+import { classMerge } from '../utils/cn';
 
 type Props = {
   label: string;
@@ -15,7 +16,7 @@ export const Input = ({ label, ...rest }: Props) => {
       <input
         id={id}
         type="email"
-        className="border rounded-sm border-slate-900"
+        className={classMerge('border rounded-sm border-slate-900')}
         {...rest}
       />
     </div>
