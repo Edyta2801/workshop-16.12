@@ -1,8 +1,9 @@
+import { Header } from '@wa/common-ui';
+
 export default async function ContactPage() {
-    return (
-      <div>
-        <h1>Contact</h1>
-      </div>
-    );
-  }
-  
+  return (
+    <div>
+      <Header>Contact</Header>
+    </div>
+  );
+}
